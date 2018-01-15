@@ -1,0 +1,18 @@
+* {
+	font-family: sans-serif;
+	color: white;
+}
+
+html {
+	background-color:var(--background-color);
+}
+
+img {
+	width:var(--image-width);
+}
+
+body {
+	background: url(../images/school.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}

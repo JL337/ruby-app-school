@@ -1,0 +1,11 @@
+<h1>Sparta Secondary School Student List</h1>
+
+<% @students.each do |student| %>
+<div>
+  <h3><a href="/students/<%= student.id %>"><%= student.name %></a></h3>
+  <p> Gender: <%= student.gender %></p>
+  <p> Age: <%= student.age %></p>
+  <p> Best Subject: <%= student.best_subject %></p>
+  <p> Year: <%= student.year %></p>
+</div>
+<% end %>
