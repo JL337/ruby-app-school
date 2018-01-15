@@ -1,34 +1,36 @@
-<form action="/students/<%= @student.id %>" method="POST">
-  <div>
-    <label>Name: </label>
-    <input type="text" name="name" placeholder="Enter a Student Name" value="<%= @student.name %>">
-  </div>
+<div class="col-sm-4 col-sm-offset-4" id = "form">
+  <form action="/students/<%= @student.id %>" method="POST">
+    <div>
+      <label>Name: </label>
+      <input type="text" name="name" placeholder="Enter Student Name" value="<%= @student.name %>">
+    </div>
 
-  <div>
-    <label>Gender: </label>
-    <input type="text" name="gender" placeholder="Enter a Student Gender" value="<%= @student.gender %>">
-  </div>
+    <div>
+      <label>Gender: </label>
+      <input type="text" name="gender" placeholder="Enter Student Gender" value="<%= @student.gender %>">
+    </div>
 
-  <div>
-    <label>Age: </label>
-    <input type="text" name="age" placeholder="Enter a Student Age" value="<%= @student.age %>">
-  </div>
+    <div>
+      <label>Age: </label>
+      <input type="text" name="age" placeholder="Enter Student Age" value="<%= @student.age %>">
+    </div>
 
-  <div>
-    <label>Best Subject: </label>
-    <input type="text" name="best_subject" placeholder="Enter the Student's Best Subject" value="<%= @student.best_subject %>">
-  </div>
+    <div>
+      <label>Best Subject: </label>
+      <input type="text" name="best_subject" placeholder="Enter Student's Best Subject" value="<%= @student.best_subject %>">
+    </div>
 
-  <div>
-    <label>Year: </label>
-    <input type="text" name="year" placeholder="Enter the Student Class Year" value="<%= @student.year %>">
-  </div>
+    <div>
+      <label>Year: </label>
+      <input type="text" name="year" placeholder="Enter Student Class Year" value="<%= @student.year %>">
+    </div>
 
-  <div>
-    <input type="submit" value="Save Student Details">
-  </div>
+    <div class="submit-button">
+      <input type="submit" value="Save Student Details">
+    </div>
 
-  <% if(@student.id) %>
-    <input type="hidden" name="_method" value="PUT">
-  <% end %>
-</form>
+    <% if(@student.id) %>
+      <input type="hidden" name="_method" value="PUT">
+    <% end %>
+  </form>
+</div>
