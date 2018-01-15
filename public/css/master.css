@@ -1,7 +1,18 @@
 * {
   font-family: 'Verdana', sans-serif;
   font-size:10;
-  font-weight:bold;
+  font color: white;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+#student-data {
+	font color: white;
+	background-color: white;
+	margin-bottom: 10px;
 }
 
 html {
@@ -13,7 +24,7 @@ img {
 }
 
 body {
-	background: url(../images/school.jpeg);
+	background: url(../images/school_room.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
