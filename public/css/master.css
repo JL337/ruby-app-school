@@ -9,7 +9,7 @@ a {
 
 #student-data {
 	color: white;
-	background-color: black;
+	background-color: rgba(0,0,0,0.8);
 	border: solid grey;
 	margin-top: 10px;
 	margin-right: 5px;
@@ -35,7 +35,7 @@ a {
 #form {
 	text-align: center;
 	border: solid grey;
-	background: black;
+	background-color: rgba(0,0,0,0.8);
     color: #00ffff;
 	border-radius: 20px;
 	margin-top: 10px;
