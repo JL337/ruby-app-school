@@ -9,12 +9,9 @@
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="<%= url('/css/master.css') %>"
 </head>
-<body>
-  
+<body> 
    <%= erb(:'partials/navigation', :layout => false) %>
    <%= yield %>
-
 <script type="text/javascript" src="<%= url('/js/app.js') %>"></script>
-
 </body>
 </html>
