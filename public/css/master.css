@@ -1,6 +1,6 @@
 * {
-  font-family: 'Verdana', sans-serif;
-  font-size:10;
+ /* font-family: 'Verdana', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -8,6 +8,7 @@ a {
 }
 
 #student-data {
+ 	font-size:15px;
 	color: white;
 	background-color: rgba(0,0,0,0.8);
 	border: solid grey;
