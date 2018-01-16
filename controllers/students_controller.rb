@@ -9,17 +9,19 @@ class StudentsController < Sinatra::Base
 	end
 
 	get '/students' do
-		@title = "List of Students"
+		@title = "Students Index"
 		@students = Student.all
 		erb :'students/index'
 	end
 
 	get '/students/new' do
+		@title = "Add New Student"
 		@student = Student.new
 		erb :'students/new'
 	end
 
 	get '/students/:id' do
+		@title = "Show Student"
 		id = params[:id].to_i
 		@student = Student.find id
 		erb :'students/show'
@@ -61,6 +63,7 @@ class StudentsController < Sinatra::Base
 	end
 
 	get '/students/:id/edit' do
+		@title = "Edit Student"
 		id = params[:id].to_i
 		@student = Student.find id
 		erb :'students/edit'
