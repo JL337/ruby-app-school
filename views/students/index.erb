@@ -1,10 +1,11 @@
 <div class="col-sm-8 col-sm-offset-2" id="index-header">
-	<h1> Richmond Secondary School Student Register</h1>
+	<h1> Richmond Secondary School Student Database</h1>
 </div>
 
 <% @students.each do |student| %>
 <div class="col-sm-12" id="student-data">
-  <h3><a href="/students/<%= student.id %>"><%= student.name %></a></h3>
+	<h3><a href="/students/<%= student.id %>"><%= student.name %></a></h3>
+	<p> ID number: <%= student.id %></p>
 	<p> Gender: <%= student.gender %></p>
 	<p> Age: <%= student.age %></p>
 	<p> Best Subject: <%= student.best_subject %></p>

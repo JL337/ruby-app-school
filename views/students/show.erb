@@ -1,14 +1,35 @@
-<h1> Name: <%= @student.name %></h1>
-<p>Gender: <%= @student.gender %></p>
-<p>Age: <%= @student.age %></p>
-<p>Best Subject: <%= @student.best_subject %></p>
-<p>Year: <%= @student.year %></p>
+<div class="col-sm-8 col-sm-offset-2" id="title-show-student">
+	<h1>Name: <%= @student.name %></h1>
+</div>
 
-<!-- Link to edit students details -->
-<a href="/students/<%= @student.id %>/edit">Edit Student Details</a>
+<div class="col-sm-4 col-sm-offset-4" id="form">
+    <div>
+		<h2> ID Number: <%= @student.id %></h2>
+    </div>
 
-<!-- Button to delete student information -->
-<form action="/students/<%= @student.id %>" method="POST">
-  <input type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Delete Student Details">
-</form> 
+    <div>
+		<p>Gender: <%= @student.gender %></p>
+    </div>
+
+    <div>
+		<p>Age: <%= @student.age %></p>
+    </div>
+
+    <div>
+ 		<p>Best Subject: <%= @student.best_subject %></p>
+    </div>
+
+    <div>
+		<p>Year: <%= @student.year %></p>
+    </div>     
+
+	<!-- Button to go to edit student information -->
+	<a href="/students/<%= @student.id %>/edit"> <button>Edit Student Details</button></a>
+
+	<!-- Button to delete student information -->
+	<form action="/students/<%= @student.id %>" method="POST">
+	  <input type="hidden" name="_method" value="DELETE">
+	  <input type="submit" value="Delete Student Details">
+	</form> 
+
+</div>

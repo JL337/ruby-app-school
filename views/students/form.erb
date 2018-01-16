@@ -2,31 +2,32 @@
   <form action="/students/<%= @student.id %>" method="POST">
     <div>
       <label>Name: </label>
-      <input type="text" name="name" placeholder="Enter Student Name" value="<%= @student.name %>">
+      <input type="text" name="name" placeholder="Student Name" value="<%= @student.name %>">
     </div>
 
     <div>
       <label>Gender: </label>
-      <input type="text" name="gender" placeholder="Enter Student Gender" value="<%= @student.gender %>">
+      <input type="text" name="gender" placeholder="Student Gender" value="<%= @student.gender %>">
     </div>
 
     <div>
       <label>Age: </label>
-      <input type="text" name="age" placeholder="Enter Student Age" value="<%= @student.age %>">
+      <input type="text" name="age" placeholder="Student Age" value="<%= @student.age %>">
     </div>
 
     <div>
       <label>Best Subject: </label>
-      <input type="text" name="best_subject" placeholder="Enter Student's Best Subject" value="<%= @student.best_subject %>">
+      <input type="text" name="best_subject" placeholder="Student Best Subject" value="<%= @student.best_subject %>">
     </div>
 
     <div>
       <label>Year: </label>
-      <input type="text" name="year" placeholder="Enter Student Class Year" value="<%= @student.year %>">
-    </div>
+      <input type="text" name="year" placeholder="Student Class Year" value="<%= @student.year %>">
+    </div>  
+
 
     <div class="submit-button">
-      <input type="submit" value="Save Student Details">
+      <input type="submit" value="Save Edited Student Details">
     </div>
 
     <% if(@student.id) %>

@@ -42,11 +42,16 @@ a {
 	padding-top: 10px;
 }
 
-input {
-color: black;
+button, input {
+	color: black;
+	border: none;
+	cursor: pointer;
+	text-align: left;
+	margin-bottom: 10px;
+	background: grey;
 }
 
-#title-new-student {
+#title-new-student, #title-edit-student, #title-show-student{
 	text-align: center;
 	border: solid grey;
 	background: black;
@@ -54,28 +59,18 @@ color: black;
 	border-radius: 20px;
 }
 
-/*.submit-button{
+.submit-button input[type="submit"]{
+	background: white;
 	color: black;
-	background-color: green;
-}*/
-
- .submit-button input[type="submit"] {
-   background: grey;
-   color: black;
-   border: none;
-   border-radius: 2px;
-   cursor: pointer;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom: 10px;
- }
-
-html {
-	background-color:var(--background-color);
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
-img {
-	width:var(--image-width);
+::placeholder {
+	color: #CDC5BF;
 }
 
 body {
@@ -83,3 +78,6 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+
+
